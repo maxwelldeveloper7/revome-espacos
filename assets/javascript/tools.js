@@ -5,9 +5,21 @@ function removerEspacosExtras(texto) {
 
 function processarTexto() {
     // Obtém o valor do campo de entrada de texto
-    var texto = document.getElementById('entrada').value;
+    const texto = document.getElementById('entrada').value;
     // Remove espaços extras
-    var textoProcessado = removerEspacosExtras(texto);
+    const textoProcessado = removerEspacosExtras(texto);
     // Exibe o texto processado no campo de saída
     document.getElementById('saida').textContent = textoProcessado;
+}
+
+function copiarParaAreaDeTransferencia() {
+    const texto = document.getElementById('saida').textContent;
+    // Copia o texto para a área de transferência
+    navigator.clipboard.writeText(texto)
+        .then(() => {
+            alert('Texto copiado para a área de transferência!');
+        })
+        .catch((err) => {
+            console.error('Erro ao copiar para a área de transferência:', err);
+        });
 }

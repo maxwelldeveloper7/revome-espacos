@@ -16,10 +16,25 @@ h2 {
 }
 
 input, div{
-    height: 400px;
+    height: 350px;
     width: 800px;
 }
 
 div {
     border: black solid 1px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #45a049;
 }
