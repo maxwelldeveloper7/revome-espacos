@@ -17,7 +17,7 @@ function copiarParaAreaDeTransferencia() {
     // Copia o texto para a área de transferência
     navigator.clipboard.writeText(texto)
         .then(() => {
-            alert('Texto copiado para a área de transferência!');
+            console.log('Texto copiado para a área de transferência!');
         })
         .catch((err) => {
             console.error('Erro ao copiar para a área de transferência:', err);
