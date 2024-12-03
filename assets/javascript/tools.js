@@ -10,6 +10,7 @@ function processarTexto() {
     const textoProcessado = removerEspacosExtras(texto);
     // Exibe o texto processado no campo de saída
     document.getElementById('saida').textContent = textoProcessado;
+    document.getElementById('entrada').value = '';
 }
 
 function copiarParaAreaDeTransferencia() {
